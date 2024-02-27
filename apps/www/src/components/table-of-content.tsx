@@ -49,6 +49,7 @@ export function DashboardTableOfContents({ toc }: TocProps) {
   ) : null
 }
 
+// TODO: Use our own useIntersectionObserver hook
 function useActiveItem(itemIds: (string | undefined)[]) {
   const [activeId, setActiveId] = React.useState<string>('')
 
